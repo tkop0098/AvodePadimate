@@ -16,7 +16,7 @@ jobs:
     - name: Set up Xcode
       uses: maxim-lobanov/setup-xcode@v1
       with:
-        xcode-version: '15.0'
+        xcode-version: '26.5.0'
 
     - name: Create Xcode Project Structure
       run: |
@@ -30,5 +30,4 @@ jobs:
       run: |
         echo "Projeyi derleme simülasyonu ve paketleme aşaması..."
         # Xcodebuild komutu ile arşivleme simülasyonu yapılır
-        # Not: Gerçek cihaz imzalaması (code signing) için Apple Developer Sertifikası gerekir.
         echo "Derleme tamamlandı."
